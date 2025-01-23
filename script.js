@@ -120,4 +120,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// Enable toggling between light and dark modes
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+    const body = document.body;
+    
+    toggleDarkModeButton.addEventListener('click', function () {
+        body.classList.toggle('dark-mode'); // Toggle dark mode class on body
+        
+        // Toggle dark mode classes on all necessary elements
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('.logo').classList.toggle('dark-mode');
+        document.querySelectorAll('h1, h2, #timer, .link-card a, .nav-links nav ul li a').forEach(el => {
+            el.classList.toggle('dark-mode');
+        });
+    });
+});

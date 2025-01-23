@@ -7,8 +7,8 @@ body {
 }
 
 body.dark-mode {
-    background-color: #333; /* Dark background color */
-    color: #F5F5DC; /* Light text color */
+    background-color: #000000; /* Dark background for dark mode */
+    color: #ffffff; /* Light text color for dark mode */
 }
 
 header {
@@ -16,7 +16,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fff; /* Ensure background color is set */
+    background-color: #fff; /* Light background color */
     z-index: 1000; /* Ensure it's on top */
     padding: 10px 20px; /* Add some padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
@@ -27,7 +27,7 @@ header {
 }
 
 header.dark-mode {
-    background-color: #444; /* Dark background for header */
+    background-color: #002F6C; /* Dark blue background for header in dark mode */
 }
 
 .logo {
@@ -39,7 +39,7 @@ header.dark-mode {
 }
 
 .logo.dark-mode {
-    color: #F5F5DC; /* Light color for dark mode */
+    color: #FFCD00; /* Bright yellow for logo in dark mode */
 }
 
 .burger-menu {
@@ -60,7 +60,7 @@ header.dark-mode {
 }
 
 .burger-menu.dark-mode .bar {
-    background-color: #F5F5DC; /* Light color for dark mode */
+    background-color: #FFCD00; /* Bright yellow for burger menu in dark mode */
 }
 
 .nav-links {
@@ -86,7 +86,7 @@ header.dark-mode {
 }
 
 .nav-links nav ul li a.dark-mode {
-    color: #F5F5DC; /* Light color for dark mode */
+    color: #00C1D4; /* Cyan color for nav links in dark mode */
 }
 
 h1, h2 {
@@ -94,7 +94,7 @@ h1, h2 {
 }
 
 h1.dark-mode, h2.dark-mode {
-    color: #F5F5DC; /* Light color for dark mode */
+    color: #FFCD00; /* Bright yellow for headings in dark mode */
 }
 
 section#about, section#questionnaire, section#links {
@@ -105,18 +105,22 @@ section#about, section#questionnaire, section#links {
 form {
     max-width: 600px;
     margin: 0 auto;
+    color: inherit; /* Inherit color for dark mode */
 }
 
 label, select, textarea {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+    color: inherit; /* Inherit color for dark mode */
 }
 
 textarea {
     width: 100%;
     height: 150px;
     resize: vertical;
+    background-color: #333; /* Dark background for textarea in dark mode */
+    color: #fff; /* Light text color for textarea in dark mode */
 }
 
 ul {
@@ -131,6 +135,10 @@ ul li {
 ul li a {
     color: #0073e6;
     text-decoration: none;
+}
+
+ul li a.dark-mode {
+    color: #00C1D4; /* Cyan color for list links in dark mode */
 }
 
 /* Footer navigation links justified between */
@@ -155,8 +163,8 @@ ul li a {
 }
 
 .scroll-list__wrp.dark-mode {
-    background-color: #444; /* Dark background color */
-    color: #F5F5DC; /* Light text color */
+    background-color: #002F6C; /* Dark blue background for scroll list in dark mode */
+    color: #ffffff; /* Light text color */
 }
 
 .link-card {
@@ -174,8 +182,8 @@ ul li a {
 }
 
 .link-card.dark-mode {
-    background-color: #555; /* Dark background color for cards */
-    color: #F5F5DC; /* Light text color for cards */
+    background-color: #FFCD00; /* Bright yellow for link cards in dark mode */
+    color: #002F6C; /* Dark blue text color for cards in dark mode */
 }
 
 .link-card a {
@@ -186,7 +194,7 @@ ul li a {
 }
 
 .link-card a.dark-mode {
-    color: #F5F5DC; /* Light color for dark mode */
+    color: #002F6C; /* Dark blue for links in dark mode */
 }
 
 .link-card .icon {
@@ -205,6 +213,10 @@ ul li a {
     color: #666;
 }
 
+.link-card.dark-mode .link-content p {
+    color: #002F6C; /* Dark blue text color for cards in dark mode */
+}
+
 /* Styling for the quiz section */
 #quiz {
     background-color: #fff;
@@ -217,12 +229,12 @@ ul li a {
 }
 
 #quiz.dark-mode {
-    background-color: #444; /* Dark background color for quiz section */
-    color: #F5F5DC; /* Light text color */
+    background-color: #FF6A00; /* Vibrant orange background for quiz section in dark mode */
+    color: #ffffff; /* Light text color for quiz section in dark mode */
 }
 
 #quiz input[type="submit"] {
-    background-color: #0073e6;
+    background-color: #E10098;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -231,7 +243,7 @@ ul li a {
 }
 
 #quiz input[type="submit"]:hover {
-    background-color: #005bb5;
+    background-color: #002F6C; /* Dark blue for submit button hover in dark mode */
 }
 
 /* Styling for the countdown timer */
@@ -246,8 +258,8 @@ ul li a {
 }
 
 #countdown.dark-mode {
-    background-color: #444; /* Dark background color for countdown */
-    color: #F5F5DC; /* Light text color */
+    background-color: #002F6C; /* Dark blue background for countdown in dark mode */
+    color: #FFCD00; /* Bright yellow text color for countdown in dark mode */
 }
 
 #timer {
@@ -256,7 +268,7 @@ ul li a {
 }
 
 #timer.dark-mode {
-    color: #F5F5DC; /* Light color for dark mode */
+    color: #ffffff; /* Light color for dark mode */
 }
 
 /* Media Queries for Mobile Devices */
