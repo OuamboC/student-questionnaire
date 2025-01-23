@@ -26,5 +26,6 @@ This repository hosts a student questionnaire designed for software engineering 
 - [LinkedIn]([https://linkedin.com](https://www.linkedin.com/in/canis-ouambo-203264234/))
 - [GitHub]([https://github.com](https://github.com/OuamboC))
 
+You can illustrate tHE questionnaire  by clicking the link [here](https://ouamboc.github.io/student-questionnaire/)
 **Contributing:** 
 Feel free to open issues or submit pull requests if you have any suggestions or improvements.
