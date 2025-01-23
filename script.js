@@ -1,3 +1,5 @@
+//Add console.log at the beginning for debugging
+console.log("JavaScript file is loaded correctly");
 // Questionnaire Form Submission
 document.getElementById("questionnaire-form").addEventListener("submit", function (event) {
     event.preventDefault();
