@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC;
+    margin: 0; /* Ensure there is no margin around the body */
+    padding-top: 80px; /* Give space for the fixed header */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: #F5F5DC; /* Light text color */
+}
+
+header {
+    position: fixed; /* Change to fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Ensure background color is set */
+    z-index: 1000; /* Ensure it's on top */
+    padding: 10px 20px; /* Add some padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the content */
+    transition: background-color 0.3s; /* Smooth transition for dark mode */
+}
+
+header.dark-mode {
+    background-color: #444; /* Dark background for header */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0073e6;
+    margin: 0; /* Remove default margin */
+    cursor: pointer; /* Make it clickable */
+}
+
+.logo.dark-mode {
+    color: #F5F5DC; /* Light color for dark mode */
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.burger-menu.dark-mode .bar {
+    background-color: #F5F5DC; /* Light color for dark mode */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.nav-links nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links nav ul li {
+    display: inline;
+}
+
+.nav-links nav ul li a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.nav-links nav ul li a.dark-mode {
+    color: #F5F5DC; /* Light color for dark mode */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1.dark-mode, h2.dark-mode {
+    color: #F5F5DC; /* Light color for dark mode */
+}
+
+section#about, section#questionnaire, section#links {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+/* Footer navigation links justified between */
+.nav-links-footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.scroll-list__wrp {
+    width: 100%;
+    height: 300px; /* Smaller height for noticeable scroll effect */
+    overflow: auto;
+    padding: 20px; /* Reduced padding to fit content better */
+    border-radius: 8px;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    background-color: #fff; /* Light background color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+.scroll-list__wrp.dark-mode {
+    background-color: #444; /* Dark background color */
+    color: #F5F5DC; /* Light text color */
+}
+
+.link-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px; /* Space between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+.link-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.link-card.dark-mode {
+    background-color: #555; /* Dark background color for cards */
+    color: #F5F5DC; /* Light text color for cards */
+}
+
+.link-card a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.link-card a.dark-mode {
+    color: #F5F5DC; /* Light color for dark mode */
+}
+
+.link-card .icon {
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.link-card .link-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.link-card .link-content p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Styling for the quiz section */
+#quiz {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+#quiz.dark-mode {
+    background-color: #444; /* Dark background color for quiz section */
+    color: #F5F5DC; /* Light text color */
+}
+
+#quiz input[type="submit"] {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#quiz input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Styling for the countdown timer */
+#countdown {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+#countdown.dark-mode {
+    background-color: #444; /* Dark background color for countdown */
+    color: #F5F5DC; /* Light text color */
+}
+
+#timer {
+    font-size: 2em;
+    color: #0073e6;
+}
+
+#timer.dark-mode {
+    color: #F5F5DC; /* Light color for dark mode */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: static;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    section#about, section#questionnaire, section#links, section#quiz, section#countdown {
+        padding: 10px;
+    }
+
+    .link-card {
+        flex: 1 1 100%;
+    }
+}
