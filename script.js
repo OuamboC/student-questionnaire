@@ -1,5 +1,6 @@
-//Add console.log at the beginning for debugging
-console.log("JavaScript file is loaded correctly");
+// Add console.log at the beginning for debugging
+console.log("JavaScript file is loaded correctly.");
+
 // Questionnaire Form Submission
 document.getElementById("questionnaire-form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -124,10 +125,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Enable toggling between light and dark modes
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded and parsed");
+    
     const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
     const body = document.body;
     
     toggleDarkModeButton.addEventListener('click', function () {
+        console.log("Toggle button clicked");
+        
         body.classList.toggle('dark-mode'); // Toggle dark mode class on body
         
         // Toggle dark mode classes on all necessary elements

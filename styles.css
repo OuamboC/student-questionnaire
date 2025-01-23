@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5DC;
@@ -8,7 +9,7 @@ body {
 
 body.dark-mode {
     background-color: #000000; /* Dark background for dark mode */
-    color: #ffffff; /* Light text color for dark mode */
+    color: #00C1D4; /* Light text color for dark mode */
 }
 
 header {
@@ -16,7 +17,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fff; /* Light background color */
+    background-color: #FFCD00; /* Light background color */
     z-index: 1000; /* Ensure it's on top */
     padding: 10px 20px; /* Add some padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
@@ -31,15 +32,27 @@ header.dark-mode {
 }
 
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #0073e6;
-    margin: 0; /* Remove default margin */
-    cursor: pointer; /* Make it clickable */
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0; /* Ensure some space around it */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+/* Adjust positioning to ensure it stays between the header and countdown */
+header + .logo {
+    margin-bottom: 20px; /* Space between header and logo */
+}
+
+.logo + #countdown {
+    margin-top: 20px; /* Space between logo and countdown */
 }
 
 .logo.dark-mode {
-    color: #FFCD00; /* Bright yellow for logo in dark mode */
+    color: #00C1D4; /* Bright yellow for logo in dark mode */
 }
 
 .burger-menu {
@@ -219,7 +232,7 @@ ul li a.dark-mode {
 
 /* Styling for the quiz section */
 #quiz {
-    background-color: #fff;
+    background-color: #E10098;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -248,7 +261,7 @@ ul li a.dark-mode {
 
 /* Styling for the countdown timer */
 #countdown {
-    background-color: #fff;
+    background-color: #FF6A00;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -264,15 +277,20 @@ ul li a.dark-mode {
 
 #timer {
     font-size: 2em;
-    color: #0073e6;
+    color: #ffffff;
 }
 
 #timer.dark-mode {
-    color: #ffffff; /* Light color for dark mode */
+    color: #0073e6; /* Light color for dark mode */
+
 }
 
-/* Media Queries for Mobile Devices */
+/* Media Queries for Responsive Design */
 @media (max-width: 600px) {
+    body {
+        padding-top: 60px; /* Adjust for smaller screens */
+    }
+    
     .burger-menu {
         display: block;
     }
@@ -281,7 +299,13 @@ ul li a.dark-mode {
         display: none;
         flex-direction: column;
         justify-content: flex-start;
-        position: static;
+        position: absolute; /* Ensure it overlays */
+        top: 60px; /* Position below the header */
+        left: 0;
+        right: 0;
+        background-color: #FFCD00; /* Match the header's color */
+        z-index: 999; /* Ensure it overlays other content */
+        transition: all 0.3s ease; /* Smooth transition */
     }
 
     .nav-links.active {
@@ -290,14 +314,38 @@ ul li a.dark-mode {
 
     .nav-links nav ul {
         flex-direction: column;
-        gap: 5px;
+        gap: 10px; /* Increase gap for better spacing */
     }
 
     section#about, section#questionnaire, section#links, section#quiz, section#countdown {
-        padding: 10px;
+        padding: 15px; /* Ensure better padding on smaller screens */
     }
 
     .link-card {
         flex: 1 1 100%;
+        margin-bottom: 15px; /* Space between cards on small screens */
+    }
+
+    .logo {
+        padding: 20px; /* Adjust padding */
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    #countdown {
+        padding: 20px;
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    /* Footer navigation adjustments */
+    .nav-links-footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .nav-links-footer nav ul li {
+        margin-bottom: 15px; /* Space between items on smaller screens */
     }
 }
+
+
