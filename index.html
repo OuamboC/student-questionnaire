@@ -8,44 +8,71 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>Class of 2025</h1>
-    <h1>Student Questionnaire</h1>
-
-    
+    <h1 class="logo">Student Questionnaire</h1>
     <header>
-        <div class="burger-menu" id="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div>
+          <h1>Class of 2025</h1>
         </div>
-        <section class="nav-links" id="nav-links">
-            <nav>
-                <ul class="stair-menu">
-                    <li><a href="./questionnaire.html" target="_blank">Questionnaire</a></li>
-                    <li><a href="https://discord.com/users/917045074590838784" target="_blank">Discord</a></li>
-                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/OuamboC" target="_blank">GitHub</a></li>
-                    <li><a href="mailto:canis.b.ouambo@stu.mmu.ac.uk" target="_blank">My Email</a></li>
-                    <li><a href="#Useful-links">Useful Links</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-
-    <section id="countdown">
+          <div class="burger-menu" id="burger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <section class="nav-links" id="nav-links">
+              <nav>
+                  <ul class="stair-menu">
+                      <li><a href="./questionnaire.html" target="_blank">Questionnaire</a></li>
+                      <li><a href="https://discord.com/users/917045074590838784" target="_blank">Discord</a></li>
+                      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                      <li><a href="https://github.com/OuamboC" target="_blank">GitHub</a></li>
+                      <li><a href="mailto:canis.b.ouambo@stu.mmu.ac.uk" target="_blank">My Email</a></li>
+                      <li><a href="#Useful-links">Useful Links</a></li>
+                  </ul>
+              </nav>
+          </section>
+          <button id="toggle-dark-mode">Toggle Dark Mode</button>
+      </header>
+      <section id="countdown">
         <h2>Countdown to the End of Semester</h2>
         <div id="timer"></div>
     </section>
-
-    <h2>Who I am?</h2>
-    <section id="About">
+      <h2>Who I am ?</h2>
+      <section id="About">
         <p>Hi Everyone,</p>
-        <p>I am Canis Breal Ouambo, one of your classmates. I am acting as your Course Rep until we graduate. Unfortunately, during Semester 1, I didn't get a chance to properly introduce myself. Now that we’ve completed Semester 1, I’ve decided to create this website so you can freely answer the questions, either with your name or anonymously.</p>
-        <p>I encourage each of you to participate because our duty is to make our course, our journey, and our faculty the best they can be. Remember, we’ve invested a lot of money to gain strong knowledge and a critical understanding of software development projects.</p>
-    </section>
-    <hr>
-
-    <section id="Useful-links">
+        <p>
+          I am Canis Breal Ouambo, one of your classmates. I am acting as your
+          Course Rep until we graduate. Unfortunately, during Semester 1, I didn't
+          get a chance to properly introduce myself. Now that we’ve completed
+          Semester 1, I’ve decided to create this website so you can freely answer
+          the questions, either with your name or anonymously.
+        </p>
+        <p>
+          I encourage each of you to participate because our duty is to make our
+          course, our journey, and our faculty the best they can be. Remember,
+          we’ve invested a lot of money to gain strong knowledge and a critical
+          understanding of software development projects.
+        </p>
+      </section>
+      <section id="quiz">
+          <h2>Interactive Quiz</h2>
+          <p>Test your knowledge!</p>
+          <form id="quiz-form">
+              <p>1. What does HTML stand for?</p>
+              <input type="radio" name="q1" value="Hyper Text Markup Language"> Hyper Text Markup Language<br>
+              <input type="radio" name="q1" value="Home Tool Markup Language"> Home Tool Markup Language<br>
+              <input type="radio" name="q1" value="Hyperlinks and Text Markup Language"> Hyperlinks and Text Markup Language<br>
+      
+              <p>2. Which programming language is known as the language of the web?</p>
+              <input type="radio" name="q2" value="Python"> Python<br>
+              <input type="radio" name="q2" value="Java"> Java<br>
+              <input type="radio" name="q2" value="JavaScript"> JavaScript<br>
+      
+              <input type="submit" value="Submit">
+          </form>
+          <div id="quiz-result"></div>
+      </section>
+      
+      <section class="scroll-list__wrp" id="Useful-links">
         <h2>Useful Links</h2>
         <div class="link-card">
             <a href="https://www.mmu.ac.uk/student-life/wellbeing" target="_blank">
