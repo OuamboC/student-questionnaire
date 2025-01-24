@@ -348,4 +348,27 @@ ul li a.dark-mode {
     }
 }
 
+/* Nav links - Add these styles */
+.nav-links nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center text within the link */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.nav-links-footer nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center text within the link */
+    text-decoration: none; /* Remove underline from links */
+}
+
 

@@ -143,3 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Ensure Feather icons are initialized
+document.addEventListener("DOMContentLoaded", () => {
+    feather.replace();
+  });
