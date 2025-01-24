@@ -74,6 +74,22 @@ You should see a message confirming that the data was received and saved. This p
 5.Review the server's response
 
 
+## Update to Latest versions
+bash 
+```
+npm update
+```
+## Identify and fix any security vulnerabilities in your dependencies
+bash 
+```
+npm audit fix
+```
+## Funding Dependencies 
+npm fund
+
+
+
+
 
 
 **How to Use:**
