@@ -1,6 +1,11 @@
 // Add console.log at the beginning for debugging
 console.log("JavaScript file is loaded correctly.");
 
+// Ensure Feather icons are initialized
+document.addEventListener("DOMContentLoaded", () => {
+    feather.replace();
+});
+
 // Questionnaire Form Submission
 document.getElementById("questionnaire-form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -144,7 +149,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Ensure Feather icons are initialized
-document.addEventListener("DOMContentLoaded", () => {
-    feather.replace();
-});
+
