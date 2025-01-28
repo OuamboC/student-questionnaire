@@ -5,7 +5,26 @@ console.log("JavaScript file is loaded correctly.");
 document.addEventListener("DOMContentLoaded", () => {
     feather.replace();
 });
-
+// Enable toggling between light and dark modes
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded and parsed");
+    
+    const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+    const body = document.body;
+    
+    toggleDarkModeButton.addEventListener('click', function () {
+        console.log("Toggle button clicked");
+        
+        body.classList.toggle('dark-mode'); // Toggle dark mode class on body
+        
+        // Toggle dark mode classes on all necessary elements
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelector('.logo').classList.toggle('dark-mode');
+        document.querySelectorAll('h1, h2, #timer, .link-card a, .nav-links nav ul li a').forEach(el => {
+            el.classList.toggle('dark-mode');
+        });
+    });
+});
 // Questionnaire Form Submission
 document.getElementById("questionnaire-form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -128,25 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Enable toggling between light and dark modes
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM fully loaded and parsed");
-    
-    const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-    const body = document.body;
-    
-    toggleDarkModeButton.addEventListener('click', function () {
-        console.log("Toggle button clicked");
-        
-        body.classList.toggle('dark-mode'); // Toggle dark mode class on body
-        
-        // Toggle dark mode classes on all necessary elements
-        document.querySelector('header').classList.toggle('dark-mode');
-        document.querySelector('.logo').classList.toggle('dark-mode');
-        document.querySelectorAll('h1, h2, #timer, .link-card a, .nav-links nav ul li a').forEach(el => {
-            el.classList.toggle('dark-mode');
-        });
-    });
-});
+
 
 
