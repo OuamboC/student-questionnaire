@@ -372,3 +372,49 @@ ul li a.dark-mode {
 }
 
 
+/* Ensure iframe container respects the CSS */
+.iframe-container {
+    width: 100%; /* Make it responsive */
+    max-width: 800px; /* Adjust to your content width */
+    margin: 20px auto; /* Center it and add space around */
+    border: 1px solid #ddd; /* Optional: Add a border around the iframe */
+    border-radius: 8px; /* Optional: Round the corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.iframe-container iframe {
+    width: 100%; /* Make iframe take full container width */
+    height: 100vh; /* Set a reasonable height */
+    border: none; /* Remove default border */
+}
+  
+/*
+#toggle-dark-mode{
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+
+}
+
+
+#toggle-dark-mode:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+*/
