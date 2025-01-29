@@ -104,6 +104,8 @@ header + .logo {
 
 h1, h2 {
     color: #333;
+    text-align: center;
+    
 }
 
 h1.dark-mode, h2.dark-mode {
@@ -338,13 +340,20 @@ ul li a.dark-mode {
 
     /* Footer navigation adjustments */
     .nav-links-footer nav ul {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row-reverse; 
+        gap: 10px; 
         padding: 0;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Ensure items wrap if they don't fit in one line */
     }
 
     .nav-links-footer nav ul li {
-        margin-bottom: 15px; /* Space between items on smaller screens */
+        margin-bottom: 0; /* Space between items on smaller screens */
+        list-style: none;
+    }
+    .nav-links-footer nav ul li a {
+        width: 100%; /* Ensure links take full width on small screens */
+        text-align: center; /* Center align text */
     }
 }
 
