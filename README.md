@@ -18,20 +18,12 @@ This repository hosts a student questionnaire designed for software engineering 
 - Google Form
 
 
-
-
-
-
-
 **How to Use:**
 1. Clone the repository: `git clone https://github.com/your-username/student-questionnaire.git`
 2. Navigate to the project directory: `cd student-questionnaire`
 3. Open `index.html` in your web browser to view and interact with the questionnaire.
 
-**Links:**
-- [Discord](https://discord.com/users/917045074590838784)
-- [LinkedIn]([https://linkedin.com](https://www.linkedin.com/in/canis-ouambo-203264234/))
-- [GitHub]([https://github.com](https://github.com/OuamboC))
+
 
 You can illustrate tHE questionnaire  by clicking the link [here](https://ouamboc.github.io/student-questionnaire/)
 **Contributing:** 
