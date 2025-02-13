@@ -54,7 +54,7 @@ header + .logo {
 .logo.dark-mode {
     color: #00C1D4; /* Bright yellow for logo in dark mode */
 }
-
+/* Default burger meny style */
 .burger-menu {
     display: none;
     cursor: pointer;
@@ -64,14 +64,15 @@ header + .logo {
     z-index: 1000; /* Ensure it's on top */
 }
 
+/* Style for the bars */
 .burger-menu .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #FF6A00;
     margin: 5px 0;
     transition: 0.4s;
 }
-
+/* Style for the bars on dark-mode */
 .burger-menu.dark-mode .bar {
     background-color: #FFCD00; /* Bright yellow for burger menu in dark mode */
 }
@@ -431,13 +432,29 @@ ul li a.dark-mode {
 #toggle-dark-mode {
     padding: 12px 24px;
     border-radius: 12px;
-    background-color: #1f2937;
-    color: white;
+    background-color: white;
+    color: #1f2937;
     font-size: 16px;
     font-weight: bold;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Smaller screens (tablets & phones) */
+  @media (max-width: 768px) {
+    #toggle-dark-mode {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Very small screens (mobile devices) */
+  @media (max-width: 480px) {
+    #toggle-dark-mode {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
   }
   
   #toggle-dark-mode:hover {
@@ -447,5 +464,6 @@ ul li a.dark-mode {
   #toggle-dark-mode:active {
     transform: scale(0.95);
   }
+  
   
   
