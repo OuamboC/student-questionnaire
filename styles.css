@@ -427,3 +427,34 @@ ul li a.dark-mode {
 }
 
 */
+
+.dark-mode-btn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: #1f2937; /* Dark Gray */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .dark-mode-btn:hover {
+    background-color: #374151; /* Slightly lighter gray */
+  }
+  
+  .dark-mode-btn:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+  }
+  
+  /* Dark Mode Styling */
+  .dark-mode .dark-mode-btn {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode .dark-mode-btn:hover {
+    background-color: #e5e7eb; /* Light Gray */
+  }
+  
