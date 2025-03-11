@@ -1,7 +1,8 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F5DC;
+    background-color: #F5F5DC; /* Light background */
+    color: #333; /* Dark text for better contrast */
     margin: 0; /* Ensure there is no margin around the body */
     padding-top: 80px; /* Give space for the fixed header */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
@@ -18,6 +19,7 @@ header {
     left: 0;
     right: 0;
     background-color: #FFCD00; /* Light background color */
+    color: #000000; /* Black text for better contrast */
     z-index: 1000; /* Ensure it's on top */
     padding: 10px 20px; /* Add some padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
@@ -29,6 +31,7 @@ header {
 
 header.dark-mode {
     background-color: #002F6C; /* Dark blue background for header in dark mode */
+    color: #FFFFFF; /* White text for better contrast */
 }
 
 .logo {
@@ -52,7 +55,7 @@ header + .logo {
 }
 
 .logo.dark-mode {
-    color: #00C1D4; /* Bright yellow for logo in dark mode */
+    color: #FFFFFF; /* White text for better contrast */
 }
 /* Default burger meny style */
 .burger-menu {
@@ -110,7 +113,7 @@ h1, h2 {
 }
 
 h1.dark-mode, h2.dark-mode {
-    color: #FFCD00; /* Bright yellow for headings in dark mode */
+    color: #FFFFFF; /* White text for better contrast */
 }
 
 section#about, section#questionnaire, section#links {
@@ -184,7 +187,8 @@ ul li a.dark-mode {
 }
 
 .link-card {
-    background-color: #fff;
+    background-color: #FFFFFF; /* White background for link cards */
+    color: #333; /* Dark text for better contrast */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -198,19 +202,19 @@ ul li a.dark-mode {
 }
 
 .link-card.dark-mode {
-    background-color: #FFCD00; /* Bright yellow for link cards in dark mode */
-    color: #002F6C; /* Dark blue text color for cards in dark mode */
+    background-color: #002F6C; /* Dark blue background for link cards in dark mode */
+    color: #FFFFFF; /* White text for better contrast */
 }
 
 .link-card a {
     text-decoration: none;
-    color: #333;
+    color: #0073e6; /* Blue text for links */
     display: flex;
     align-items: center;
 }
 
 .link-card a.dark-mode {
-    color: #002F6C; /* Dark blue for links in dark mode */
+    color: #FFFFFF; /* White text for better contrast */
 }
 
 .link-card .icon {
@@ -236,6 +240,7 @@ ul li a.dark-mode {
 /* Styling for the quiz section */
 #quiz {
     background-color: #E10098;
+    color: #FFFFFF; /* White text for better contrast */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -246,7 +251,7 @@ ul li a.dark-mode {
 
 #quiz.dark-mode {
     background-color: #FF6A00; /* Vibrant orange background for quiz section in dark mode */
-    color: #ffffff; /* Light text color for quiz section in dark mode */
+    color: #FFFFFF; /* White text for better contrast */
 }
 
 #quiz input[type="submit"] {
@@ -265,6 +270,7 @@ ul li a.dark-mode {
 /* Styling for the countdown timer */
 #countdown {
     background-color: #FF6A00;
+    color: #FFFFFF; /* White text for better contrast */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -275,7 +281,7 @@ ul li a.dark-mode {
 
 #countdown.dark-mode {
     background-color: #002F6C; /* Dark blue background for countdown in dark mode */
-    color: #FFCD00; /* Bright yellow text color for countdown in dark mode */
+    color: #FFFFFF; /* White text for better contrast */
 }
 
 #timer {
@@ -432,8 +438,8 @@ ul li a.dark-mode {
 #toggle-dark-mode {
     padding: 12px 24px;
     border-radius: 12px;
-    background-color: white;
-    color: #1f2937;
+    background-color: #FFFFFF; /* White background for button */
+    color: #1F2937; /* Dark text for better contrast */
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -458,7 +464,8 @@ ul li a.dark-mode {
   }
   
   #toggle-dark-mode:hover {
-    background-color: #374151;
+    background-color: #374151; /* Darker background on hover */
+    color: #FFFFFF; /* White text for better contrast */
   }
   
   #toggle-dark-mode:active {
